@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg3.png');
+    background-size: cover;
+  }
+  
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: rgb(255, 135, 191);
+  }
+
+  .button-page {
+    max-width: 630px;
+}
+
+.button-page h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: rgb(36, 36, 36); 
+}
+
+.button-page h3 {
+  font-size: 30px;
+  color: #62cdff;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: rgb(36, 36, 36); 
+}
+
+.button-page p {
+    font-size: 15px;
+    margin: 15px 0 30px;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #ff7bae; 
+    border: 2px solid #ff609d;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #3abffc;
+}
+  

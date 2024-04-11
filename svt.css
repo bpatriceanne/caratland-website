@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:  30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ff7bae;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #67cfff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ff7bae;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.social-media a:hover {
+    border-color: #67cfff;
+}
+
+.social-media a i {
+    font-size: 24px;
+    color: #ff7bae;
+    transform: rotate(-45deg);
+}
+
+.CARAT {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+}
+
+.CARAT-content {
+    max-width: 630px;
+}
+
+.CARAT-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.CARAT-content h3 {
+    font-size: 30px;
+    color: #67cfff;
+}
+
+.CARAT-content p {
+    font-size: 15px;
+    margin: 15px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #ff7bae; 
+    border: 2px solid #ff609d;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #3abffc;
+}
+
+.CARAT-img {
+    position: relative;
+    right: -7%;
+    width: 350px;
+    height: 350px;
+    transform: rotate(45deg);
+}

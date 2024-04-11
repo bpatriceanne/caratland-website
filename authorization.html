@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="authorization.css">
+    <title>Authorization</title>
+</head>
+
+<body>
+    <section class="Quiz">
+        <div class="quiz-page">
+            <h1>SEVENTEEN Contents</h1>
+            <h3>Before you access it.</h3>
+            <p>When did SEVENTEEN announced their official fandom name CARAT?</p>
+        </div>
+    <div class="container">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+        <input type="text" maxlength="1" oninput="moveToNext(this)">
+    </div>
+</section>
+    <script>
+        const correctPassword = "021416";
+    
+        function moveToNext(currentInput) {
+            if (currentInput.value.length == 1) {
+                var inputs = Array.prototype.slice.call(document.querySelectorAll('.container input'));
+                var currentIndex = inputs.indexOf(currentInput);
+                if (currentIndex < inputs.length - 1) {
+                    inputs[currentIndex + 1].focus();
+                } else {
+                    verifyPassword();
+                }
+            }
+        }
+    
+        function verifyPassword() {
+            var enteredPassword = Array.prototype.map.call(document.querySelectorAll('.container input'), function(input) {
+                return input.value;
+            }).join('');
+    
+            if (enteredPassword === correctPassword) {
+                window.location.href = "https://svtflixforcarats.carrd.co/";
+            } else {
+                alert("Incorrect password. Please try again.");
+                // Reset the inputs
+                Array.prototype.forEach.call(document.querySelectorAll('.container input'), function(input) {
+                    input.value = '';
+                });
+                // Focus on the first input
+                document.querySelectorAll('.container input')[0].focus();
+            }
+        }
+    </script>
+    
+</body>
+</html>
